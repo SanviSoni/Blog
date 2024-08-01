@@ -1,0 +1,38 @@
+<%- include('partials/header') %>
+
+<%- include('partials/nav') %>
+
+    <div class="min-h-screen w-full flex justify-center items-center flex-col ">
+
+        
+        <h1 class="flex justify-center text-2xl  mb-3">User Profile </h1>
+        <div class=" w-[90%] h-[80vh] bg-gray-700 rounded-2xl flex flex-col  items-center">
+
+            <h1 class=" w-full text-end px-8 mt-5 "><a href="/users/logout"
+                    class="px-4 py-2  bg-gray-400 rounded-2xl text-gray-200"> Logout</a></h1>
+
+            <div class="h-[35vh] w-[35vh]  rounded-full bg-purple-800 mt-6 border-8 ">
+                <img src="https://i.pinimg.com/564x/fa/a9/48/faa948fe08b265bae26ba13e3903825d.jpg" alt=""
+                    class="w-full h-full object-center object-cover rounded-full">
+            </div>
+
+            <div class=" ">
+                <h1 class="text-white text-4xl text-center">
+                    <%= user.username %>
+                </h1>
+                <h1 class="text-white text-2xl">
+                    <%= user.email %>
+                </h1>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <%- include('partials/footer') %>

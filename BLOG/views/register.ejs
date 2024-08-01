@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+
+    <h1 class="text-center text-4xl text-gray-500 mt-10 font-bold">Register </h1>
+
+    <form action="/users/register" method="post" class="w-1/2 p-2 mt-10 bg-gray-500 m-auto rounded-lg ">
+
+        <input type="text" placeholder="username" name="username" class="px-3 py-2 rounded-lg mt-2  bg-gray-300 w-full">
+        <input type="email" placeholder="email" name="email" class="px-3 py-2 rounded-lg mt-2  bg-gray-300 w-full">
+
+        <input type="password" name="password" placeholder="*****"
+            class="px-3 py-2 rounded-lg mt-2  bg-gray-300 w-full">
+
+        <h1 class="flex justify-end px-4"><a href="/forget" class="text-sky-300">forget password?</a></h1>
+        <button class="px-7 rounded-lg py-2 bg-gray-300">register</button>
+        <h1 class="mt-2">already have an account? <a href="/login" class="text-violet-800">Login</a></h1>
+
+    </form>
+
+    <%- include('partials/footer') %>

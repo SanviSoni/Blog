@@ -1,0 +1,33 @@
+<%- include('partials/header') %>
+
+
+
+
+    <div class="h-screen w-full">
+
+        <h1 class="text-start px-20 text-2xl mt-5"><a href="/"> <i class="ri-arrow-left-line"></i></a>
+        </h1>
+
+        <h1 class="text-4xl text-center font-bold text-gray-500 mt-6">Creat Your Blog </h1>
+
+        <form action="/users/create" method="post" class="w-1/2 bg-gray-700 p-4 rounded-lg m-auto mt-10 ">
+
+
+            <input type="text" name="title" placeholder="title" class="w-full bg-gray-300 px-4 py-2 mt-2 rounded-lg ">
+            <input type="text" name="author" placeholder="author name"  class="w-full bg-gray-300 px-4 py-2 mt-2  rounded-lg">
+            <input type="text" name="blogImage" placeholder="blogImage" class="w-full bg-gray-300 px-4 py-2 mt-2 rounded-lg ">
+
+            <textarea name="description" placeholder="description" class="w-full bg-gray-300 px-4 py-2 mt-2 rounded-lg mb-3"></textarea>
+
+            <button class="px-4 py-2 bg-gray-300 rounded-lg ">Create</button>
+
+
+        </form>
+
+    </div>
+
+
+
+
+
+    <%- include('partials/footer') %>

@@ -1,0 +1,38 @@
+<%- include('partials/header') %>
+
+  <%- include('partials/nav') %>
+    <div class="flex justify-center py-5">
+      <div
+        class="h-[86vh] w-[96%] bg-gray-300 rounded-2xl bg-[url('https://i.pinimg.com/564x/39/ae/99/39ae997de14392d3a9c4fcd9bfc459d8.jpg')] bg-center bg-no-repeat bg-cover">
+
+      </div>
+    </div>
+
+    <div class=" all-blog min-h-screen w-full  p-5 flex
+     flex-col gap-5 bg-gray-100">
+      <% allBlogs.forEach((single)=>{ %>
+        <div class="singleBlog flex flex gap-5 ">
+
+
+          <div class="blogeimg h-[170px] w-[50vh] bg-gray-400">
+            <img src="<%= single.blogImage %>" class="h-full w-full " alt="">
+          </div>
+          <div class="">
+            <h1 class="text-3xl font-bold ">
+              <%= single.title %>
+            </h1>
+            <h2 class="text-xl text-gray-500">
+              <%= single.author %>
+            </h2>
+            <h1 class="text-l">
+              <%= single.description.slice(0,80)%>...
+            </h1>
+            <a href="/description/<%= single._id %>" class="text-blue-400 hover:text-blue-600 ">Read more</a>
+          </div>
+
+        </div>
+
+        <% }) %>
+    </div>
+
+    <%- include('partials/footer')%>
